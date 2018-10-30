@@ -150,7 +150,7 @@ func insert(ds DataType) {
         serial := d.Id
         subs := d.Statistics.SubscriberCount
         videos := d.Statistics.VideoCount
-        views := d.Statistics.VideoCount
+        views := d.Statistics.ViewCount
 
         _, err := db.Exec(sqlInsert, serial, subs, videos, views)
         if err != nil {
